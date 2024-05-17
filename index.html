@@ -36,7 +36,6 @@
                 id="markerA"
             >
                 
-                <a-entity light="type: hemisphere; color: #fff; groundColor: #fff; intensity: 2.5">
                     <a-entity
                     id="bowser-model"
                     scale="0.8792655941518844 0.8792655941518844 0.8792655941518844"
@@ -44,8 +43,13 @@
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
-                    ></a-entity>  
-                </a-entity>
+                    ></a-entity> 
+                <a-entity light="type: ambient; intensity: 0.5;"></a-entity>
+  <a-entity light="type: directional;
+                   castShadow: true;
+                   intensity: 0.4;
+                   shadowCameraVisible: true;"
+            position="-5 3 1.5"></a-entity>
 </a-light>
             </a-marker>
 
